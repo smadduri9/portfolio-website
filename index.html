@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sriram Madduri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header with name and blinking cursor -->
+    <div class="header">
+      <h1>> Sriram Madduri<span class="blinking-cursor">|</span></h1>
+      <p id="intro-text" style="display: none;"></p>
+    </div>
+
+    <!-- Terminal Section (Initially hidden, pops up after name) -->
+    <div class="terminal" id="terminal-section" style="display: none;">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <div class="button red"></div>
+          <div class="button yellow"></div>
+          <div class="button green"></div>
+        </div>
+      </div>
+      <pre id="terminal-content">
+> Sriram.currentLocation
+<span class="highlight">"Santa Clara, CA"</span>
+
+> Sriram.contactInfo 
+["<span class="highlight">maddurisriram09@gmail.com</span>", "<span class="highlight">smadduri@scu.edu</span>", "<a href='https://www.linkedin.com/in/srirammadduri/' target='_blank' class='highlight-link'>LinkedIn</a>", "<a href='https://github.com/smadduri9/' target='_blank' class='highlight-link'>GitHub</a>"]
+
+> Sriram.interests 
+["<span class="highlight">AI</span>", "<span class="highlight">Computer Vision</span>", "<span class="highlight">Full-Stack Development</span>", "<span class="highlight">Basketball</span>", "<span class="highlight">Conversations over Coffee</span>", "<span class="highlight">Hiking</span>", "<span class="highlight">Reading Books</span>"]
+
+      </pre>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- ImageApp Project -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image-app-thumbnail.png" alt="ImageApp Project">
+        </div>
+        <div class="project-description">
+          <h3>ImageApp</h3>
+          <p>
+            A Python Flask application that allows users to upload images and apply histogram equalization to enhance contrast. The app displays both the original and equalized images side-by-side.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>OpenCV</span>
+          </div>
+          <div class="project-links">
+            <a href="https://srirammadduri.com/projects/imageapp" class="live-demo">Live Demo</a>
+            <a href="https://github.com/smadduri9/imageapp" class="view-source">View Source</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/srirammadduri/" target="_blank" class="social-icon">
+          <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+        </a>
+        <a href="https://github.com/smadduri9/" target="_blank" class="social-icon">
+          <img src="github-icon.png" alt="GitHub"> GitHub
+        </a>
+      </div>
+      <p>&copy; 2024 Sriram Madduri. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
